@@ -36,7 +36,7 @@ public class CalculatorTest {
 	@Test
     public void whenMultipleFiveOnTwoThenTen() {
         Calculator calc = new Calculator();
-        calc.div(5D, 2D);
+        calc.multiple(5D, 2D);
         double result = calc.getResult();
         double expected = 10D;
         assertThat(result, is(expected));
