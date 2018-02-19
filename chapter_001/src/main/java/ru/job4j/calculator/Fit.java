@@ -4,14 +4,18 @@ package ru.job4j.calculator;
  * Программа расчета идеального веса.
  */
 public class Fit {
-
+	
+	private static final double MNOG = 1.15;
+	private static final double FORMAN = 100;
+	private static final double FORWOMAN = 110;
+	
     /**
-     * Идеальный вес для мужщины.
+     * Идеальный вес для мужчины.
      * @param height Рост.
      * @return идеальный вес.
      */
     double manWeight(double height) {
-        return (height - 100) * 1.15;
+        return (height - FORMAN) * MNOG;
     }
 
     /**
@@ -20,6 +24,6 @@ public class Fit {
      * @return идеальный вес.
      */
     double womanWeight(double height) {
-        return (height - 110) * 1.15;
+        return (height - FORWOMAN) * MNOG;
     }
 }
