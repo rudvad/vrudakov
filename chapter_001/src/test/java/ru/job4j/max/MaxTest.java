@@ -31,4 +31,11 @@ public class MaxTest {
     int result = maxim.max(7, 7);
     assertThat(result, is(7));
 	}
+	
+	@Test
+	public void whenThreeArgs() {
+    Max maxim = new Max();
+    int result = maxim.max(9, 3, 5);
+    assertThat(result, is(9));
+	}
 }
