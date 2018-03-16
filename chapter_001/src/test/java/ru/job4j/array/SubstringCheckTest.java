@@ -20,6 +20,3 @@ public class SubstringCheckTest {
 	assertThat(result, is(false));
 	}
 }
-
-
-
