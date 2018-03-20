@@ -49,7 +49,6 @@ public double area() {
 * @param ab Длина от точки a b.
 * @param ac Длина от точки a c.
 * @param bc Длина от точки b c.
-* @return
 */
 private boolean exist(double ab, double ac, double bc) {
    return ((ab + ac) > bc) && ((ab + bc) > ac) && ((ac + bc) > ab);

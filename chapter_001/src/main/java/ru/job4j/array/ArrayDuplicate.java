@@ -1,9 +1,15 @@
 package ru.job4j.array;
 
 import java.util.Arrays;
-
+/**
+ * Удаление повторяющихся символов из массива.
+ */
 public class ArrayDuplicate {
-
+/**
+ * Возвращает новый массив без повторяющихся значений.
+ * @param array Исходный массив
+ * @return Массив меньшего размера без повторяющихся значений.
+ * */
 public String[] remove(String[] array) {
 String buffer;
 int repeatNumber = 0;

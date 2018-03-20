@@ -4,32 +4,33 @@ package ru.job4j.loop;
  * @author Vadim Rudakov (vadim@rudakov.pw)
  * @version $Id$
  * @since 0.1
+ * Рисование пирамиды в псевдографике.
  */
 public class Paint {
+    /**
+     *  Отрисовывает в псевдографике треугольник как правую половину пирамиды.
+     *  @param height Высота треугольника.
+     */
     public String rightTrl(int height) {
-        // Буфер для результата.
         StringBuilder screen = new StringBuilder();
-        // ширина будет равна высоте. 
-        int weight = height; 
-        // внешний цикл двигается по строкам.
+        int weight = height;
         for (int row = 0; row != height; row++) {
-            // внутренний цикл определяет положение ячейки в строке.
             for (int column = 0; column != weight; column++) {
-                // если строка равна ячейки, то рисуем галку. 
-                // в данном случае строка определяем, сколько галок будет на строке
                 if (row >= column) {
                     screen.append("^");
                 } else {
                     screen.append(" ");
                 }
             }
-            // добавляем перевод строки.
             screen.append(System.lineSeparator());
         }
-        // Получаем результат.
         return screen.toString();
     }
-	
+
+    /**
+     *  Отрисовывает в псевдографике треугольник как левую половину пирамиды.
+     *  @param height Высота треугольника.
+     */
 	public String leftTrl(int height) {
     StringBuilder screen = new StringBuilder();
     int weight = height;
@@ -45,7 +46,11 @@ public class Paint {
 		}
     return screen.toString();
 	}
-	
+
+    /**
+     *  Отрисовывает в псевдографике пирамиду целиком.
+     *  @param height Высота пирамиды.
+     */
 	public String pyramid(int height) {
     StringBuilder screen = new StringBuilder();
     int weight = 2 * height - 1;

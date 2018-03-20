@@ -1,5 +1,7 @@
 package ru.job4j.array;
-
+/**
+ * Сортировка массива чисел методом пузырька.
+ */
 public class BubbleSort {
 
 public int[] sort(int[] array) {

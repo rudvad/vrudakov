@@ -1,6 +1,11 @@
 package ru.job4j.array;
 
 public class SubstringCheck {
+/**
+* Проверяет строку на содержание в ней строго упорядоченного набора символов.
+* @param origin Строка, в которой производится поиск.
+* @param sub Искомый набор символов  
+*/
    public boolean contains(String origin, String sub) {
         int repNumber = 0;
 		char[] data = origin.toLowerCase().toCharArray();

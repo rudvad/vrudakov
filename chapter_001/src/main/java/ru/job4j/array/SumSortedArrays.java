@@ -1,6 +1,13 @@
 package ru.job4j.array;
 
 public class SumSortedArrays {
+/**
+ * Метод слияния двух отсортированных по возрастанию массивов чисел в один, длины массивов произвольны.
+ * Массив результата также отсортирован по возрастанию.
+ * @param a Первый массив размера M
+ * @param b Второй массив размера N
+ * @return Результирующий массив размера M+N
+ */
 	public static int[] sumArrays(int[] a, int[] b) {
 		int newLength = a.length + b.length;
         int[] c = new int[newLength];

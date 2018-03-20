@@ -1,7 +1,11 @@
 package ru.job4j.array;
 
 public class Matrix {
-
+/**
+ * Выводит на экран таблицу умножения чисел.
+ * @param size Размер таблицы
+ * @return Таблица умножения размером size x size.
+ * */
 public int[][] multiple(int size) {
 int newSize = size + 1;	
 int[][] resultArray = new int[newSize][newSize];	
