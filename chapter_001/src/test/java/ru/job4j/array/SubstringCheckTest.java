@@ -16,7 +16,7 @@ public class SubstringCheckTest {
 	@Test
 	public void whenStringNotContains() {
 	SubstringCheck test = new SubstringCheck();
-	boolean result = test.contains("welcome", "ru");
+	boolean result = test.contains("welcome", "moc");
 	assertThat(result, is(false));
 	}
 }
