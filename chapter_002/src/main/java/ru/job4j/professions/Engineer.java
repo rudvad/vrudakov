@@ -7,6 +7,6 @@ public class Engineer extends Profession {
     }
 
     public void build(House house) {
-    house.setSquare(house.getSquare()+1);
+    house.setSquare(house.getSquare() + 1);
     }
 }

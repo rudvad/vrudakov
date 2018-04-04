@@ -6,7 +6,7 @@ public class Patient extends Profession {
     public Patient(String name, Diagnose diag) {
         this.setName(name);
         this.setProfession("Patient");
-        diag.setInfo("Some illness");
+        diag.setInfo(diag.getInfo());
         this.setDiagnose(diag);
     }
 

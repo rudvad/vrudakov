@@ -10,7 +10,7 @@ public class PatientTest {
         Patient pat = new Patient("George", diag);
         String expected = "Psycho";
         String result = pat.getDiagnose().getInfo();
-        assertEquals(result,expected);
+        assertEquals(result, expected);
     }
    
 }
